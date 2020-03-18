@@ -1,0 +1,595 @@
+/* Style global */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: absolute;
+	background-color: #f8f8f8;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	color: #37474f;
+}
+
+.cadre80 {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	padding: 40px 0 60px 0;
+}
+
+.ligne-cadre {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cadre {
+	flex: 1;
+}
+
+.text-center {
+	text-align: center;
+}
+/* Fin style global */
+/* Debut du header */
+
+header {
+	background-image: url('http://iwallpapers2.free.fr/images/Paysages/Hiver/Magnifique_fond_ecran_HD_-_Hiver.jpg');
+	width: 100vw;
+	height: 80vh;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 35vh;
+	color: white;
+	font-family: avenir;
+	font-weight: lighter;
+}
+
+header h2 {
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	top: 35vh;
+	color: white;
+	font-family: avenir;
+	font-weight: lighter;
+}
+/* Fin header */
+/* Menu de naviguation */
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -325px;
+	width: 650px;
+	z-index: 3;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	float: left;
+	margin: auto;
+	padding: 0;
+	background-color: rgba(127, 120, 161, 0.5);
+}
+
+nav li a {
+	display: block;
+	width: 200px;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+}
+
+nav li a:hover {
+	transition-duration: 0.7s;
+	color: black;
+}
+
+nav ul li ul {
+	display: none;
+	transition-duration: 0.5s;
+}
+
+nav ul li:hover ul {
+	display: block;
+	border-radius: 25px;
+}
+
+nav li:hover ul li {
+	float: none;
+}
+
+/* Fin du menu de naviguation */
+/* Debut de la partie presentation */
+
+#presentation {
+	background-color: white;
+}
+
+#presentation #presentation-p {
+	min-width: 500px;
+}
+
+#presentation p {
+	margin-top: 50px;
+	font-size: 24px;
+	margin-left: 50px;
+	color: #37474f;
+	display: inline-block;
+}
+
+#presentation .cadre80 img {
+	width: 200px;
+	height: auto;
+	border-radius: 10px;
+}
+
+/* Fin de la partie presentation */
+
+/* Aperçu graphique */
+
+#apercu {
+	background-color: #f9fbfc;
+	text-align: center;
+}
+
+.ligne {
+	text-align: center;
+	padding-top: 50px;
+}
+
+#apercu figure {
+	display: inline-block;
+	margin: 0 30px 10px 30px;
+}
+
+#apercu img {
+	border-radius: 10px;
+	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+}
+
+#apercu figcaption {
+	color: #37474f;
+	margin: 20px 0;
+}
+
+#apercu a {
+	text-decoration: none;
+	margin: 40px;
+	padding: 20px;
+	font-size: 30px;
+	display: inline-block;
+	color: #fff;
+	border-radius: 15px;
+	background-color: rgba(127, 120, 161, 0.5);
+	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+}
+
+/* Fin de la partie apercu */
+/* Debut de la aprtie formation */
+
+#formation {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#formation>article>div {
+	display: flex;
+	justify-content: space-between;
+}
+
+#formation figure {
+	display: inline-block;
+	margin: 0 50px 50px 50px;
+	padding-top: 50px;
+}
+
+#formation img {
+	border-radius: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+#formation figcaption {
+	color: #37474f;
+}
+
+/* fin de la partie formation */
+/* debut de la partie competence */
+
+#competences {
+	background-color: #f9fbfc;
+	text-align: center;
+}
+
+#competences h3 {
+	margin-bottom: 40px;
+}
+
+#competences figure {
+	float: left;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+	#competences figure {
+		width: 25%;
+	}
+}
+
+@media (min-width: 992px) {
+	#competences figure {
+		width: 20%;
+	}
+}
+
+#competences:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#competences img {
+	border-radius: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+#competences figcaption {
+	font-size: 20px;
+}
+
+#competences figure:first-of-type figcaption {
+	color: #218fcc;
+}
+
+#competences figure:nth-of-type(2) figcaption {
+	color: #fbb03b;
+}
+
+#competences figure:nth-of-type(3) figcaption {
+	color: #ff00ff;
+}
+
+#competences figure:nth-of-type(4) figcaption {
+	color: #8915e5;
+}
+
+#competences figure:nth-of-type(5) figcaption {
+	color: #f98800;
+}
+
+#competences figure:nth-of-type(6) figcaption {
+	color: #69ea44;
+}
+
+#competences figure:nth-of-type(7) figcaption {
+	color: #ea5050;
+}
+
+#competences figure:nth-of-type(8) figcaption {
+	color: #20c6a6;
+}
+
+#competences figure:nth-of-type(9) figcaption {
+	color: #8c6239;
+}
+
+#competences figure:nth-of-type(10) figcaption {
+	color: #ff7bac;
+}
+
+/* fin de la partie competence */
+/* debut de la apartie experiences */
+
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #FF9F55;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	left: 50%;
+}
+
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+.right::after {
+	left: -16px;
+}
+
+.content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+}
+
+@media all and (max-width: 600px) {
+	.timeline::after {
+		left: 31px;
+	}
+
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	.left::after, .right::after {
+		left: 15px;
+	}
+
+	.right {
+		left: 0%;
+	}
+}
+
+/* fin de la partie experiences */
+/* debut de la partie contact */
+
+#contact {
+	text-align: center;
+	background-image: url('../images/footer.png');
+	background-position-y: 400px;
+	background-color: rgb(127, 120, 161);
+}
+
+#contact a {
+	font-size: 30px;
+	margin: 50px;
+	padding: 20px 100px;
+	display: inline-block;
+	color: white;
+	background-color: rgba(127, 120, 161, 0.5);
+	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+/* fin de la partie contact */
+/* Début du footer */
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: #1f2931;
+}
+
+footer article {
+	display: inline-block;
+	margin: 50px;
+}
+
+footer article:first-of-type {
+	margin: 70px 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+footer article a {
+	color: #aaadb0;
+	text-decoration: none;
+}
+
+footer article:first-of-type a img {
+	display: inline-block;
+	margin: 0 0 10px 20px;
+	width: 45px;
+	height: 45px;
+}
+
+footer article:nth-of-type(2) img {
+	width: 300px;
+	height: auto;
+}
+
+footer article:last-of-type a {
+	display: block;
+}
+
+footer article h4 {
+	margin-bottom: 10px;
+	color: white;
+}
+
+/* Fin du footer */
+/* Page creation graphique */
+
+
+#crea {
+	background-color: #f9fbfc;
+	text-align: center;
+}
+
+#crea figure {
+	display: inline-block;
+	margin: 0 30px 10px 30px;
+}
+
+#crea img {
+	border-radius: 10px;
+	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+}
+
+#crea figcaption {
+	color: #37474f;
+	margin: 20px 0;
+}
+
+#crea a {
+	text-decoration: none;
+	margin: 40px;
+	padding: 20px;
+	font-size: 30px;
+	display: inline-block;
+	color: #fff;
+	border-radius: 15px;
+	background-color: rgba(127, 120, 161, 0.5);
+	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+}
+
+/* Fin de la page crea */
+/* page contact */
+
+#form {
+	margin: 50px auto;
+	width: 550px;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+
+label {
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+	color: #37474f;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width: 400px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	margin: 1em 0;
+	border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+	border-color: #000;
+}
+
+textarea {
+	vertical-align: middle;
+	height: 10em;
+	resize: vertical;
+}
+
+.button {
+	padding-left: 90px;
+	text-align: center;
+}
+
+.button>input {
+	margin: 20px;
+	display: inline-block;
+	width: 100px;
+	background-color: #F8F8F8;
+	padding: 5px;
+	border-radius: 5px;
+	color: #37474f;
+}
+
+.button>input:hover {
+	background-color: white;
+	transition: 0.5s;
+}
+/* fin de la page contact */
+/*  page form-contact */
+
+#form-contact {
+	margin: 50px auto;
+	width: 500px;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+
+#form-contact td {
+	color: #37474f;
+}
+/* fin de la page form-contact */
