@@ -2,7 +2,7 @@
 $titre = 'Mes créations - Yann Bauduin - Web Designer';
 include('header.php'); ?>
 
-
+<main class="container">
 <!-- Début du bloc apercu -->
 
 	<section id="crea">
@@ -97,5 +97,5 @@ include('header.php'); ?>
             </article>
 	</section>
    <!-- fin du bloc apercu -->
-
+</main>
 <?php include('footer.php'); ?>

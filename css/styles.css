@@ -4,62 +4,36 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Baloo 2', cursive;
 }
 
 body {
-	position: absolute;
 	background-color: #f8f8f8;
 }
 
 h3 {
 	text-align: center;
 	font-size: 28px;
-	color: #37474f;
-}
-
-.cadre80 {
-	width: 80vw;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-section {
-	padding: 40px 0 60px 0;
-}
-
-.ligne-cadre {
-	display: flex;
-	display: -webkit-flex;
-	align-items: center;
-	-webkit-align-items: center;
-	justify-content: center;
-	-webkit-justify-content: center;
-	flex-wrap: wrap;
-}
-
-.cadre {
-	flex: 1;
-}
-
-.text-center {
-	text-align: center;
+	color: white;
+	margin: 2% 0 4% 0;
+	background-color: #1f2931;
 }
 /* Fin style global */
 /* Debut du header */
-
 header {
 	background-image: url('http://iwallpapers2.free.fr/images/Paysages/Hiver/Magnifique_fond_ecran_HD_-_Hiver.jpg');
 	width: 100vw;
 	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
-
 header h1 {
 	text-align: center;
 	font-size: 40px;
 	position: relative;
-	top: 35vh;
+	top: 30vh;
 	color: white;
-	font-family: avenir;
 	font-weight: lighter;
 }
 
@@ -67,118 +41,65 @@ header h2 {
 	text-align: center;
 	font-size: 30px;
 	position: relative;
-	top: 35vh;
+	top: 30vh;
 	color: white;
-	font-family: avenir;
 	font-weight: lighter;
 }
 /* Fin header */
-/* Menu de naviguation */
 
-nav {
-	position: fixed;
-	top: 0px;
-	left: 50%;
-	margin-left: -325px;
-	width: 650px;
-	z-index: 3;
+main {
+	background-color: #c8d6e5;
+	padding-bottom: 4%;
 }
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
-}
-
-nav li {
-	float: left;
-	margin: auto;
-	padding: 0;
-	background-color: rgba(127, 120, 161, 0.5);
-}
-
-nav li a {
-	display: block;
-	width: 200px;
-	color: white;
-	text-decoration: none;
-	padding: 5px;
-}
-
-nav li a:hover {
-	transition-duration: 0.7s;
-	color: black;
-}
-
-nav ul li ul {
-	display: none;
-	transition-duration: 0.5s;
-}
-
-nav ul li:hover ul {
-	display: block;
-	border-radius: 25px;
-}
-
-nav li:hover ul li {
-	float: none;
-}
-
-/* Fin du menu de naviguation */
 /* Debut de la partie presentation */
 
-#presentation {
-	background-color: white;
+#presentation{
+	padding: 2% 2%;
+	border-radius: 7px;
 }
-
-#presentation #presentation-p {
-	min-width: 500px;
+#presentation article{
+	text-align: center;
 }
-
 #presentation p {
-	margin-top: 50px;
 	font-size: 24px;
-	margin-left: 50px;
 	color: #37474f;
-	display: inline-block;
 }
-
-#presentation .cadre80 img {
-	width: 200px;
-	height: auto;
+#presentation img {
+	box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.45);
 	border-radius: 10px;
 }
-
+#presentation figcaption {
+	color: #37474f;
+	padding: 20px 0;
+	font-size: 18px;
+}
+@media screen and (max-width: 575px){
+	#presentation figure{
+		order: -1;
+	}
+}
 /* Fin de la partie presentation */
 
 /* Aperçu graphique */
 
 #apercu {
-	background-color: #f9fbfc;
 	text-align: center;
 }
-
-.ligne {
-	text-align: center;
-	padding-top: 50px;
+#apercu article article {
+	justify-content: center;
 }
-
 #apercu figure {
-	display: inline-block;
-	margin: 0 30px 10px 30px;
+	margin: 0 0 10px 0;
+	width: calc(100% / 3 - 40px);
 }
-
 #apercu img {
 	border-radius: 10px;
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
 }
-
 #apercu figcaption {
 	color: #37474f;
 	margin: 20px 0;
 }
-
 #apercu a {
 	text-decoration: none;
 	margin: 40px;
@@ -190,7 +111,20 @@ nav li:hover ul li {
 	background-color: rgba(127, 120, 161, 0.5);
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
 }
-
+@media screen and (max-width: 991px) {
+	#apercu article article {
+		justify-content: center;
+	}
+	#apercu figure {
+		width: calc(100% / 2 - 40px);
+	}
+}
+@media screen and (max-width: 768px){
+	#apercu article article{
+		flex-direction: column;
+		align-items: center;
+	}
+}
 /* Fin de la partie apercu */
 /* Debut de la aprtie formation */
 
@@ -198,24 +132,21 @@ nav li:hover ul li {
 	text-align: center;
 	padding-bottom: 50px;
 }
-
-#formation>article>div {
-	display: flex;
-	justify-content: space-between;
+#formation .card{
+	align-items: center;
+	min-width: 250px;
+	margin: 0 10px;
+	background-color: inherit;
+	border:inherit;
 }
-
-#formation figure {
-	display: inline-block;
-	margin: 0 50px 50px 50px;
-	padding-top: 50px;
+#formation div {
+	justify-content: center;
 }
-
 #formation img {
 	border-radius: 10px;
-	height: 150px;
 	width: 150px;
+	height: 150px;
 }
-
 #formation figcaption {
 	color: #37474f;
 }
@@ -224,7 +155,6 @@ nav li:hover ul li {
 /* debut de la partie competence */
 
 #competences {
-	background-color: #f9fbfc;
 	text-align: center;
 }
 
@@ -308,6 +238,9 @@ nav li:hover ul li {
 
 /* fin de la partie competence */
 /* debut de la apartie experiences */
+#experiences{
+	margin: 4% 0;
+}
 
 .timeline {
 	position: relative;
@@ -326,14 +259,15 @@ nav li:hover ul li {
 	margin-left: -3px;
 }
 
-.container {
+#experiences .container {
 	padding: 10px 40px;
 	position: relative;
 	background-color: inherit;
 	width: 50%;
+	margin-left: 0px !important;
 }
 
-.container::after {
+#experiences .container::after {
 	content: '';
 	position: absolute;
 	width: 25px;
@@ -396,13 +330,13 @@ nav li:hover ul li {
 		left: 31px;
 	}
 
-	.container {
+	#experiences .container {
 		width: 100%;
 		padding-left: 70px;
 		padding-right: 25px;
 	}
 
-	.container::before {
+	#experiences .container::before {
 		left: 60px;
 		border: medium solid white;
 		border-width: 10px 10px 10px 0;
@@ -444,11 +378,12 @@ nav li:hover ul li {
 /* Début du footer */
 
 footer {
-	display: flex;
-	justify-content: space-around;
 	background-color: #1f2931;
 }
-
+footer section {
+	display: flex;
+	justify-content: space-around;
+}
 footer article {
 	display: inline-block;
 	margin: 50px;
@@ -485,12 +420,17 @@ footer article h4 {
 	color: white;
 }
 
+@media screen and (max-width:750px){
+	footer section{
+		flex-direction: column;
+		align-items: center;
+	}
+}
 /* Fin du footer */
 /* Page creation graphique */
 
 
 #crea {
-	background-color: #f9fbfc;
 	text-align: center;
 }
 

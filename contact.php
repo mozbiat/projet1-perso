@@ -1,7 +1,7 @@
 <?php
 $titre = 'Contact - Yann Bauduin - Web Designer';
 include('header.php'); ?>
-
+<main class="container">
   <div id="formulaire">
 	<section class="cadre80">
             <h3>Formulaire de contact</h3>
@@ -51,6 +51,6 @@ include('header.php'); ?>
 			</table>
 		</form>
 	</section>
-
+</main>
 
  <?php include('footer.php'); ?>
