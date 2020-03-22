@@ -55,19 +55,19 @@ include('header.php'); ?>
             <h3>Formations</h3>
             <div class="row">
                 <div class="card">
-                    <img src="images/picto-vente.svg" class="card-img-top" alt="Picto Web Développeur">
+                    <img src="images/picto-dev-web_0-01.svg" class="card-img-top" alt="Picto Web Développeur">
                     <div class="card-body">
                         <p class="card-text">Web Développeur PHP/Symfony <br>(niveau bac +2)</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/picto-vente.svg" class="card-img-top" alt="Picto Web Développeur">
+                    <img src="images/edit-tool.svg" class="card-img-top" alt="Picto Web Développeur">
                     <div class="card-body">
                         <p class="card-text">Web Designer <br>(niveau bac +2)</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/picto-vente.svg" class="card-img-top" alt="Picto Web Développeur">
+                    <img src="images/picto-caisse.svg" class="card-img-top" alt="Picto Web Développeur">
                     <div class="card-body">
                         <p class="card-text">Hôte de caisse</p>
                     </div>
