@@ -13,13 +13,13 @@ include('header.php'); ?>
     $objet = htmlspecialchars($_POST['objet']);
     $commentaire = htmlspecialchars($_POST['commentaire']);
 
-    $sujet="Contact via bauduin.yann.ovh";
+    $sujet="Contact via mon site";
     $mailDestinataire="bauduin.yann.59@gmail.com";
 
     $from = "From: ".$prenom." ".$nom."<".$email."> \nMime-Version:\n";
     $from .= " 1.0\nContent-Type: text/html; charset=UTF-8\n";
 
-    $messageMail = "Formulaire de contact depuis le site <a href='bauduin.yann.ovh'>Bauduin.yann.ovh</a><br><br>
+    $messageMail = "Formulaire de contact depuis le site perso<br><br>
               Nom : ".$nom."<br>
               Prénom : ".ucfirst($prenom)."<br>
               Email : ".$email."<br><br>
