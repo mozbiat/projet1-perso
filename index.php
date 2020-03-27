@@ -28,25 +28,25 @@ include('header.php'); ?>
             <!-- premiere ligne -->
             <article class="row col-sm-12">
                 <?php
-                    $img = [0 => '<img alt="Montage Photo - Scarlette Johanson" src="images/image1.jpg">
-                                        <figcaption> Montage Photo - Scarlette Johanson</figcaption>',
-                        1 => '<img alt="Homepage Euerecam" src="images/image2.jpg">
-                                        <figcaption>Homepage - Eurecam</figcaption>',
-                        2 => '<img alt="Mise en situation du logo Faktory" src="images/image3.jpg">
+                    $img = [0 => '<a href="images/scarlette.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="Montage Photo - Scarlette Johanson" src="images/image1.jpg"></a>
+                                    <figcaption> Montage Photo - Scarlette Johanson</figcaption>',
+                        1 => '<a href="images/eurecam.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="Homepage Euerecam" src="images/image2.jpg"></a>
+                                <figcaption>Homepage - Eurecam</figcaption>',
+                        2 => '<a href="images/faktory.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="Mise en situation d\'un logo" src="images/image3.jpg"></a>
                                         <figcaption>Mise en situation du logo Faktory</figcaption>',
-                        3 => '<img alt="Article lunette" src="images/image4.jpg">
+                        3 => '<a href="images/article-lunette.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="article lunette" src="images/image4.jpg"></a>
                                         <figcaption> Article lunette </figcaption>',
-                        4 => '<img alt="Homepage leffe" src="images/image5.jpg">
-                                        <figcaption>Homepage Leffe</figcaption>',
-                        5 => ' <img alt="Maquette Dividom" src="images/image6.jpg">
-                                        <figcaption>Maquette Dividom</figcaption>'];
+                        4 => '<a href="images/leffe.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="homepage leffe" src="images/image5.jpg"></a>
+                              <figcaption>Homepage Leffe</figcaption>',
+                        5 => '<a href="images/test-dividom.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img alt="Maquette Dividom" src="images/image6.jpg"></a>
+                              <figcaption>Maquette Dividom</figcaption>'];
 
                     foreach ($img as $key){
                         echo '<figure>' . $key .'</figure>';
                     };
 ?>
             </article>
-            <a href="creation.php">Voir toutes mes créations</a>
+            <a class="yb-btn" href="creation.php">Voir toutes mes créations</a>
         </article>
     </section>
     <!-- fin du bloc apercu -->

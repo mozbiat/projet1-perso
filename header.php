@@ -13,12 +13,12 @@
     <!-- début du header -->
 	<header>
 		<h1>Yann Bauduin</h1>
-		<h2>Web Designer & Développeur PHP/Synfony</h2>
+		<h2>Développeur PHP/Synfony & Web Designer</h2>
 	</header>
     <!-- fin du header -->
 
     <!-- Début de menu de naviguation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="index.php">Yann Bauduin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

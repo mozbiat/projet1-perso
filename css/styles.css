@@ -17,6 +17,7 @@ h3 {
 	color: white;
 	margin: 2% 0 4% 0;
 	background-color: #1f2931;
+	padding: 10px 0;
 }
 /* Fin style global */
 /* Debut du header */
@@ -50,6 +51,7 @@ header h2 {
 main {
 	background-color: #c8d6e5;
 	padding-bottom: 4%;
+	border-radius: 15px;
 }
 /* Debut de la partie presentation */
 
@@ -67,6 +69,13 @@ main {
 #presentation img {
 	box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.45);
 	border-radius: 10px;
+	transition-duration: 1s;
+}
+#presentation img:hover {
+	box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.45);
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition-duration: 1s;
 }
 #presentation figcaption {
 	color: #37474f;
@@ -95,12 +104,17 @@ main {
 #apercu img {
 	border-radius: 10px;
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+	transition-duration: 1s;
+}
+#apercu img:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
 }
 #apercu figcaption {
 	color: #37474f;
 	margin: 20px 0;
 }
-#apercu a {
+#apercu .yb-btn {
 	text-decoration: none;
 	margin: 40px;
 	padding: 20px;
@@ -110,10 +124,18 @@ main {
 	border-radius: 15px;
 	background-color: rgba(127, 120, 161, 0.5);
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+	transition-duration: 1s;
+}
+#apercu .yb-btn:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
 }
 @media screen and (max-width: 991px) {
 	#apercu article article {
 		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	#apercu figure {
 		width: calc(100% / 2 - 40px);
@@ -146,6 +168,11 @@ main {
 	border-radius: 10px;
 	width: 150px;
 	height: 150px;
+	transition-duration: 1s;
+}
+#formation img:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
 }
 #formation figcaption {
 	color: #37474f;
@@ -190,8 +217,12 @@ main {
 	border-radius: 10px;
 	width: 150px;
 	height: 150px;
+	transition-duration: 1s;
 }
-
+#competences img:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
 #competences figcaption {
 	font-size: 20px;
 }
@@ -372,8 +403,12 @@ main {
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
 	border-radius: 10px;
 	text-decoration: none;
+	transition-duration: 1s;
 }
-
+#contact a:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
 /* fin de la partie contact */
 /* Début du footer */
 
@@ -404,8 +439,12 @@ footer article:first-of-type a img {
 	margin: 0 0 10px 20px;
 	width: 45px;
 	height: 45px;
+	transition-duration: 1s;
 }
-
+footer article:first-of-type a img:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
 footer article:nth-of-type(2) img {
 	width: 300px;
 	height: auto;
@@ -442,8 +481,12 @@ footer article h4 {
 #crea img {
 	border-radius: 10px;
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+	transition-duration: 1s;
 }
-
+#crea img:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
 #crea figcaption {
 	color: #37474f;
 	margin: 20px 0;
@@ -459,8 +502,12 @@ footer article h4 {
 	border-radius: 15px;
 	background-color: rgba(127, 120, 161, 0.5);
 	box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.47);
+	transition-duration: 1s;
 }
-
+#yb-btn:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
 /* Fin de la page crea */
 /* page contact */
 

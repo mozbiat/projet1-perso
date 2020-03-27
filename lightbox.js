@@ -624,7 +624,7 @@
 
                     if (width + widthBorderAndPadding > maxWidth) {
                         height = (maxWidth - widthBorderAndPadding - discountMargin) / imageAspecRatio;
-                        width = maxWidth;
+                        width = "60vw";
                     } else width = width + widthBorderAndPadding;
 
                     var headerHeight = 0,
@@ -643,13 +643,10 @@
 
                     var maxHeight = Math.min(height, $(window).height() - borderPadding - margins - headerHeight - footerHeight, this._config.maxHeight - borderPadding - headerHeight - footerHeight);
 
-                    if (height > maxHeight) {
-                        // if height > the available height, scale down the width
-                        width = Math.ceil(maxHeight * imageAspecRatio) + widthBorderAndPadding;
-                    }
 
                     this._$lightboxContainer.css('height', maxHeight);
                     this._$modalDialog.css('flex', 1).css('maxWidth', width);
+                    this._$modalContent.css('background-color', "transparent").css('border', "none");
 
                     var modal = this._$modal.data('bs.modal');
                     if (modal) {
